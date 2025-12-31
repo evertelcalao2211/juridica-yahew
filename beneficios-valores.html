@@ -1,0 +1,567 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beneficios y Valores | Juridica e Inmobiliaria Colombia YHWH
+</title>
+    <meta name="description" content="Valores éticos, profesionales y diferenciadores que nos distinguen. Experiencia desde 2004 en Bogotá.">
+    
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        /* ESTILOS ESPECÍFICOS PARA ESTA PÁGINA */
+        .page-hero-simple {
+            padding: 180px 0 100px;
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+            color: white;
+            text-align: center;
+            margin-top: 90px;
+        }
+        
+        .page-hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .page-hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .page-hero-title span {
+            display: block;
+        }
+        
+        .page-hero-divider {
+            width: 100px;
+            height: 3px;
+            background-color: #e6af2e;
+            margin: 30px auto;
+        }
+        
+        .page-hero-text {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .page-experience-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px 40px;
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .page-years {
+            font-size: 3rem;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+            line-height: 1;
+            color: #e6af2e;
+        }
+        
+        .page-badge-text {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 5px;
+        }
+        
+        /* VALORES CON IMÁGENES */
+        .valores-page-section {
+            padding: 80px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .valores-page-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .valor-page-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid #eee;
+            transition: all 0.3s ease;
+        }
+        
+        .valor-page-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            border-color: #1a365d;
+        }
+        
+        .valor-page-image {
+            height: 200px;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .valor-page-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .valor-page-card:hover .valor-page-image img {
+            transform: scale(1.05);
+        }
+        
+        .valor-page-content {
+            padding: 30px;
+        }
+        
+        .valor-page-number {
+            font-size: 2.2rem;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+            color: rgba(26, 54, 93, 0.1);
+            margin-bottom: 10px;
+            line-height: 1;
+        }
+        
+        .valor-page-title {
+            font-size: 1.3rem;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+            min-height: 60px;
+        }
+        
+        .valor-page-description {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        
+        /* SECCIÓN CITA */
+        .cita-page-section {
+            padding: 100px 0;
+            background-color: #1a365d;
+            color: white;
+            text-align: center;
+        }
+        
+        .cita-page-text {
+            font-size: 1.8rem;
+            line-height: 1.5;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            font-style: italic;
+        }
+        
+        .cita-page-author {
+            border-top: 2px solid #e6af2e;
+            padding-top: 15px;
+            display: inline-block;
+        }
+        
+        .cita-page-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .cita-page-title {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        /* RESPONSIVE */
+        @media screen and (max-width: 768px) {
+            .page-hero-simple {
+                padding: 150px 0 80px;
+            }
+            
+            .page-hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .page-hero-text {
+                font-size: 1.1rem;
+            }
+            
+            .page-years {
+                font-size: 2.5rem;
+            }
+            
+            .valores-page-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .valor-page-title {
+                min-height: auto;
+            }
+            
+            .cita-page-text {
+                font-size: 1.4rem;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .page-hero-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER IDÉNTICO AL INDEX -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Logo Dra. Claudia Quevedo" id="main-logo">
+                </a>
+            </div>
+            
+            <nav class="main-nav desktop-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="beneficios-valores.html" class="nav-link active">Beneficios y Valores</a></li>
+                    <li><a href="derecho-familia.html" class="nav-link">Derecho de Familia</a></li>
+                    <li><a href="derecho-notarial.html" class="nav-link">Derecho Notarial</a></li>
+                    <li><a href="derecho-inmobiliario.html" class="nav-link">Derecho Inmobiliario</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-contact desktop-only">
+                <a href="contacto.html" class="btn-contact-header">Consulta</a>
+            </div>
+            
+            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menú">
+                <span class="hamburger-line line-1"></span>
+                <span class="hamburger-line line-2"></span>
+                <span class="hamburger-line line-3"></span>
+            </button>
+        </div>
+        
+        <nav class="mobile-nav" id="mobileNav">
+            <ul class="mobile-nav-list">
+                <li><a href="index.html" class="mobile-nav-link">Inicio</a></li>
+                <li><a href="beneficios-valores.html" class="mobile-nav-link active">Beneficios y Valores</a></li>
+                <li><a href="derecho-familia.html" class="mobile-nav-link">Derecho de Familia</a></li>
+                <li><a href="derecho-notarial.html" class="mobile-nav-link">Derecho Notarial</a></li>
+                <li><a href="derecho-inmobiliario.html" class="mobile-nav-link">Derecho Inmobiliario</a></li>
+                <li><a href="contacto.html" class="mobile-nav-link">Contacto</a></li>
+                <li><a href="inmobiliaria.html" class="mobile-nav-link">Propiedades</a></li>
+            </ul>
+            
+            <div class="mobile-contact-info">
+                <p>310 613 5299</p>
+                <p>juridicaintegralcolombia1@gmail.com</p>
+            </div>
+        </nav>
+    </header>
+
+    
+      <!-- HERO CON IMAGEN DESDE HTML -->
+<section class="page-hero-imagen" style="
+    position: relative;
+    padding: 180px 0 100px;
+    color: white;
+    text-align: center;
+    margin-top: 90px;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+">
+    
+    <!-- IMAGEN DE FONDO DIRECTAMENTE EN HTML -->
+    <img src="img/imagen3.jpeg" alt="Fondo hero" style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+    ">
+    
+    <!-- OVERLAY PARA MEJOR LEGIBILIDAD -->
+    <div style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(4, 8, 12, 0.753), rgba(26, 54, 93, 0.7));
+        z-index: 2;
+    "></div>
+    
+    <div class="container" style="position: relative; z-index: 3;">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h1 style="
+                font-size: 3.5rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+                line-height: 1.2;
+                font-family: 'Playfair Display', serif;
+                color: #eb8622;
+            ">
+                <span style="display: block;">Beneficios y</span>
+                <span style="display: block;">Valores</span>
+            </h1>
+            
+            <div style="
+                width: 100px;
+                height: 3px;
+                background-color: #e6af2e;
+                margin: 30px auto;
+            "></div>
+            
+            <p style="
+                font-size: 1.2rem;
+                line-height: 1.6;
+                max-width: 700px;
+                margin: 0 auto 40px;
+                color: rgba(255, 255, 255, 0.9);
+            ">
+                Lo que nos distingue como profesionales del derecho comprometidos 
+                con la excelencia y la justicia desde 2004.
+            </p>
+            
+            <div style="
+                display: inline-block;
+                background: rgba(255, 255, 255, 0.1);
+                padding: 20px 40px;
+                border-radius: 50px;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                backdrop-filter: blur(5px);
+            ">
+                <div style="
+                    font-size: 3rem;
+                    font-weight: 700;
+                    font-family: 'Playfair Display', serif;
+                    line-height: 1;
+                    color: #e6780b;
+                ">19+</div>
+                <div style="
+                    font-size: 0.9rem;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    margin-top: 5px;
+                ">Años de Experiencia</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+    <!-- SECCIÓN DE VALORES CON IMÁGENES -->
+    <section class="valores-page-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Lo Que Nos Distingue</h2>
+                <p class="section-subtitle">
+                    16 pilares fundamentales que sustentan nuestro compromiso con la excelencia jurídica
+                </p>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="valores-page-grid">
+                
+                <!-- VALOR 1 -->
+                <div class="valor-page-card">
+                    <div class="valor-page-image">
+                        <img src="img/imagendiosatemis.png" alt="Valores Éticos y Morales">
+                    </div>
+                    <div class="valor-page-content">
+                        <div class="valor-page-number">01</div>
+                        <h3 class="valor-page-title">Valores Éticos y Morales</h3>
+                        <p class="valor-page-description">
+                            Actuamos con integridad, honestidad y transparencia en cada caso, 
+                            priorizando la justicia y el bienestar de nuestros clientes.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- VALOR 2 -->
+                <div class="valor-page-card">
+                    <div class="valor-page-image">
+                        <img src="img/imagendejusticiayderecho2.png" alt="Profesionales Titulados">
+                    </div>
+                    <div class="valor-page-content">
+                        <div class="valor-page-number">02</div>
+                        <h3 class="valor-page-title">Profesionales Titulados</h3>
+                        <p class="valor-page-description">
+                            Contamos con abogados titulados y especializados, 
+                            garantizando un manejo experto y actualizado de cada área legal.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- VALOR 3 -->
+                <div class="valor-page-card">
+                    <div class="valor-page-image">
+                        <img src="img/libros de derecho.png" alt="Amplia Experiencia">
+                    </div>
+                    <div class="valor-page-content">
+                        <div class="valor-page-number">03</div>
+                        <h3 class="valor-page-title">Amplia Experiencia</h3>
+                        <p class="valor-page-description">
+                            Más de 19 años de experiencia en gestión y asesoría legal 
+                            nos permiten anticipar escenarios y ofrecer soluciones efectivas.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- AGREGA LOS 13 RESTANTES IGUAL -->
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CITA -->
+    <section class="cita-page-section">
+        <div class="container">
+            <p class="cita-page-text" style="color: #eee;">
+                "Nuestra fortaleza es la conciliación basándonos en la construcción 
+                de la paz y la justicia, buscando siempre beneficiar a las partes."
+            </p>
+            <div class="cita-page-author">
+                <p class="cita-page-name" style="color: #eee;">Dra. Claudia Quevedo Villarraga</p>
+                <p class="cita-page-title" style="color: #eee;">Fundadora y Abogada Principal</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER IDÉNTICO AL INDEX -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                   
+                    <h3 class="footer-title">Dra. Claudia Marcela Quevedo Villarraga</h3>
+                    <p class="footer-text">
+                        Abogada especializada con más de 19 años de experiencia.
+                    </p>
+                    <div class="footer-badge">
+                        Experiencia desde 2004
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Servicios</h3>
+                    <ul class="footer-list">
+                        <li><a href="derecho-familia.html">Derecho de Familia</a></li>
+                        <li><a href="derecho-notarial.html">Derecho Notarial</a></li>
+                        <li><a href="derecho-inmobiliario.html">Derecho Inmobiliario</a></li>
+                        <li><a href="derecho-notarial.html">Cobranzas</a></li>
+                        <li><a href="inmobiliaria.html">Propiedades</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Contacto</h3>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <span>Carrera 10 N.16-39 Of.16-05<br>Edificio Seguros Bolívar, Bogotá</span>
+                        </li>
+                        <li>
+                            <a href="tel:+573106135299">310 613 5299</a>
+                        </li>
+                        <li>
+                            <a href="mailto:juridicaintegralcolombia1@gmail.com">juridicaintegralcolombia1@gmail.com</a>
+                        </li>
+                        <li>
+                            <span>Lunes a Sábado: 9AM-1PM / 2PM-5PM<br>(Con cita previa)</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Conectemos</h3>
+                    <p class="footer-text">Seguimos comprometidos con la excelencia.</p>
+                    
+                    <div class="social-minimal">
+                        <a href="https://wa.link/u9glss " class="social-minimal-link">Facebook</a>
+                        <a href="https://wa.link/u9glss " class="social-minimal-link">Instagram</a>
+                        <a href="https://wa.link/u9glss " class="social-minimal-link">LinkedIn</a>
+                    </div>
+                    
+                    <a href="contacto.html" class="btn-footer-minimal">
+                        Contactar Ahora
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2026 Juridica e Inmobiliaria Colombia YHWH
+                </div>
+                <div class="legal-links">
+                    <a href="#">Privacidad</a>
+                    <span class="separator">|</span>
+                    <a href="#">Términos</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+
+
+    <!-- BOTÓN WHATSAPP FLOTANTE ANIMADO -->
+<div class="whatsapp-float-container">
+    <a href="https://wa.me/573106135299?text=Hola,%20quisiera%20solicitar%20una%20consulta%20legal" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener"
+       aria-label="Contactar por WhatsApp">
+       
+        <!-- ICONO WHATSAPP ANIMADO -->
+        <div class="whatsapp-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                <path d="M17.507 14.307l-.009.075c-.266 1.164-.788 3.207-3.348 3.343-.27.032-.494.156-.67.325-1.156 1.097-2.808 1.224-3.492 1.135-2.11-.273-4.221-1.891-5.592-3.642C2.517 13.512.934 10.33.934 7.055c0-4.799 3.8-8.597 8.6-8.597 4.8 0 8.6 3.798 8.6 8.597 0 2.542-1.117 4.897-3.127 6.252z" 
+                      fill="#25D366"/>
+                <path d="M9.534 3.358C5.734 3.358 2.7 6.392 2.7 10.192c0 1.81.7 3.62 2.07 5.01l.36.31-.15.53c-.39 1.36-.78 2.72-1.17 4.08l-.15.53.53-.15c1.36-.39 2.71-.78 4.07-1.17l.53-.15.31.36c1.39 1.37 3.2 2.07 5.01 2.07 3.8 0 6.84-3.04 6.84-6.84 0-3.8-3.04-6.84-6.84-6.84z" 
+                      fill="white"/>
+                <path d="M17.357 14.667c-.266 1.164-.788 3.207-3.348 3.343-.27.032-.494.156-.67.325-1.156 1.097-2.808 1.224-3.492 1.135-2.11-.273-4.221-1.891-5.592-3.642C2.367 13.872.784 10.69.784 7.415c0-4.799 3.8-8.597 8.6-8.597 4.8 0 8.6 3.798 8.6 8.597 0 2.542-1.117 4.897-3.127 6.252z" 
+                      fill="#25D366"/>
+                <path d="M13.14 11.358c-.32-.16-.64-.32-1.07-.48-.43-.16-.86-.32-1.28-.48-.43-.16-.75-.32-1.07-.48-.32-.16-.53-.32-.75-.48-.21-.16-.32-.32-.43-.48-.11-.16-.11-.32-.11-.48 0-.16 0-.32.11-.48.11-.16.21-.32.43-.48.21-.16.53-.32.75-.48.32-.16.64-.32 1.07-.48.43-.16.86-.32 1.28-.48.43-.16.75-.32 1.07-.48.32-.16.53-.32.75-.48.21-.16.32-.32.43-.48.11-.16.11-.32.11-.48 0-.16 0-.32-.11-.48-.11-.16-.21-.32-.43-.48-.21-.16-.53-.32-.75-.48-.32-.16-.64-.32-1.07-.48-.43-.16-.86-.32-1.28-.48-.43-.16-.75-.32-1.07-.48-.32-.16-.53-.32-.75-.48-.21-.16-.32-.32-.43-.48-.11-.16-.11-.32-.11-.48 0-.64.32-1.28.86-1.6.32-.16.75-.32 1.28-.32.64 0 1.28.32 1.6.75.32.43.64.96.75 1.6.11.64.21 1.28.21 1.92 0 .64-.1 1.28-.21 1.92-.11.64-.32 1.28-.64 1.81-.32.53-.75.96-1.28 1.28-.53.32-1.07.48-1.6.48-.43 0-.86-.11-1.28-.32z" 
+                      fill="white"/>
+            </svg>
+        </div>
+        
+        <!-- TEXTO QUE APARECE -->
+        <span class="whatsapp-text">¿Necesitas ayuda?</span>
+        
+        <!-- NOTIFICACIÓN PULSANTE -->
+        <div class="whatsapp-notification">
+            <span class="notification-dot"></span>
+        </div>
+    </a>
+    
+    <!-- BURBUJA DE CHAT QUE APARECE -->
+    <div class="whatsapp-bubble">
+        <p>¡Hablemos por WhatsApp!</p>
+        <div class="bubble-arrow"></div>
+    </div>
+</div>
+</body>
+</html>
